@@ -15,7 +15,14 @@ let dados = {
 
 function imprime_dados_loja() {
   // Implemente aqui
-  return "";
+  let output = `${dados.nome_loja}\n`;
+  output += `${dados.logradouro}, ${dados.numero} ${dados.complemento}\n`;
+  output += `${dados.bairro} - ${dados.municipio} - ${dados.estado}\n`;
+  output += `CEP:${dados.cep} Tel ${dados.telefone}\n`;
+  output += `${dados.observacao}\n`;
+  output += `CNPJ: ${dados.cnpj}\n`;
+  output += `IE: ${dados.inscricao_estadual}\n`;
+  return output;
 }
 
 module.exports = {
